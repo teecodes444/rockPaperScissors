@@ -7,8 +7,8 @@ let computerScore = 0;
 
 //create a function that randomly returns the computer choice
 
+const cChoice = Math.floor(Math.random() * 3) + 1;
 function getComputerChoice() {
-    const cChoice = Math.floor(Math.random() * 3) + 1;
     // returns a random number between 1 and 3
    switch (cChoice) {
     case 1:
