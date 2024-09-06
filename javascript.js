@@ -28,17 +28,17 @@ console.log(getComputerChoice());
 //create a function that takes user choice and return it
 
 function getHumanChoice() {
-    let uChoice = prompt("Choose: Rock, Paper, or Scissors").toLowerCase();
+    let uChoice = prompt("Choose: Rock, Paper, or Scissors");
     //save user choice in variable to be used in conditional statements
     //use switch statements to validate user choice and return input
     switch (uChoice) {
-        case 'rock':
+        case 'Rock':
             return 'Rock';
             break;
-        case 'paper':
+        case 'Paper':
             return 'Paper';
             break;
-        case 'scissors':
+        case 'Scissors':
             return 'Scissors';
             break;
         default:
@@ -55,10 +55,34 @@ console.log(getHumanChoice());
     // take computer choice
     // compare choices
     // increment winner's score
-    // log winner announcement 
-
-// function playRound(humanChoice, computerChoice) {
+    // log winner announcement
     
-// };
+    //rock beats scissors
+    //scissors beats paper
+    //paper beats rock
+
+function playRound(humanChoice, computerChoice) {
+    let uChoice = getHumanChoice();
+    let cChoice = getComputerChoice();
+    
+    if (uChoice === cChoice) {
+        console.log("It's a tie.");
+    } else if (uChoice === 'Rock' && cChoice === 'Scissors') {
+        console.log('You won!');
+    } else if (uChoice === 'Scissors' && cChoice === 'Paper') {
+        console.log('You won!');
+    } else if (uChoice === 'Paper' && cChoice === 'Rock') {
+        console.log('You won!');
+    } else {
+        console.log('Computer won.')
+    }
+    
+};
+
+const humanSelection = getHumanChoice(); 
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
+
 
 //write entire game logic
