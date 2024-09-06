@@ -21,7 +21,7 @@ function getComputerChoice() {
         return 'Scissors'
         break;
    }
-}
+};
 
 console.log(getComputerChoice());
 
