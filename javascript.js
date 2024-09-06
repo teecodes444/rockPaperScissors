@@ -10,7 +10,17 @@ let computerScore = 0;
 function getComputerChoice() {
     const cChoice = Math.floor(Math.random() * 3) + 1;
     // returns a random number between 1 and 3
-    return cChoice;
+   switch (cChoice) {
+    case 1:
+        return 'Rock';
+        break;
+    case 2:
+        return 'Paper';
+        break;
+    case 3:
+        return 'Scissors'
+        break;
+   }
 }
 
 console.log(getComputerChoice());
@@ -41,5 +51,14 @@ console.log(getHumanChoice());
 
 
 //write single round logic
+    // take user choice
+    // take computer choice
+    // compare choices
+    // increment winner's score
+    // log winner announcement 
+
+// function playRound(humanChoice, computerChoice) {
+    
+// };
 
 //write entire game logic
