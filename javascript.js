@@ -62,8 +62,6 @@ console.log(getHumanChoice());
     //paper beats rock
 
 function playRound(humanChoice, computerChoice) {
-    let humanChoice = getHumanChoice();
-    let computerChoice = getComputerChoice();
 
     console.log(`You picked ${humanChoice} and computer picked ${computerChoice}`);
     
