@@ -27,8 +27,9 @@ console.log(getComputerChoice());
 
 //create a function that takes user choice and return it
 
+let uChoice = prompt("Choose: Rock, Paper, or Scissors");
 function getHumanChoice() {
-    let uChoice = prompt("Choose: Rock, Paper, or Scissors");
+    
     //save user choice in variable to be used in conditional statements
     //use switch statements to validate user choice and return input
     switch (uChoice) {
@@ -65,17 +66,17 @@ function playRound(humanChoice, computerChoice) {
     let uChoice = getHumanChoice();
     let cChoice = getComputerChoice();
     
-    if (uChoice === cChoice) {
-        console.log("It's a tie.");
-    } else if (uChoice === 'Rock' && cChoice === 'Scissors') {
-        console.log('You won!');
-    } else if (uChoice === 'Scissors' && cChoice === 'Paper') {
-        console.log('You won!');
-    } else if (uChoice === 'Paper' && cChoice === 'Rock') {
-        console.log('You won!');
-    } else {
-        console.log('Computer won.')
-    }
+    // if (uChoice === cChoice) {
+    //     console.log("It's a tie.");
+    // } else if (uChoice === 'Rock' && cChoice === 'Scissors') {
+    //     console.log('You won!');
+    // } else if (uChoice === 'Scissors' && cChoice === 'Paper') {
+    //     console.log('You won!');
+    // } else if (uChoice === 'Paper' && cChoice === 'Rock') {
+    //     console.log('You won!');
+    // } else {
+    //     console.log('Computer won.')
+    // }
     
 };
 
