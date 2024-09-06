@@ -62,8 +62,10 @@ console.log(getHumanChoice());
     //paper beats rock
 
 function playRound(humanChoice, computerChoice) {
-    let uChoice = getHumanChoice();
+    let uChoice = getHumanChoice().toLowerCase();
     let cChoice = getComputerChoice();
+
+    console.log(`You picked ${uChoice} and computer picked ${cChoice}`);
     
     // if (uChoice === cChoice) {
     //     console.log("It's a tie.");
