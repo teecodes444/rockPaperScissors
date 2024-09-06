@@ -90,3 +90,7 @@ playRound(humanSelection, computerSelection);
 // console.log(computerScore);
 
 //write entire game logic
+    //create a function to call playRound
+        //call it 5X
+    //keep track of score
+    //declare winner after 5 games
