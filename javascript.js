@@ -66,13 +66,17 @@ function playRound(humanChoice, computerChoice) {
     if (humanChoice === computerChoice) {
         console.log(`It's a tie. You picked ${humanChoice} and computer picked ${computerChoice}`);
     } else if (humanChoice === 'Rock' && computerChoice === 'Scissors') {
-        console.log(`You won! ${humanChoice} beats ${computerChoice}!`);
+        console.log(`You won! ${humanChoice} beats ${computerChoice}!`)
+        humanScore++;
     } else if (humanChoice === 'Scissors' && computerChoice === 'Paper') {
-        console.log(`You won! ${humanChoice} beats ${computerChoice}!`);
+        console.log(`You won! ${humanChoice} beats ${computerChoice}!`)
+        humanScore++;
     } else if (humanChoice === 'Paper' && computerChoice === 'Rock') {
-        console.log(`You won! ${humanChoice} beats ${computerChoice}!`);
+        console.log(`You won! ${humanChoice} beats ${computerChoice}!`)
+        humanScore++;
     } else {
-        console.log(`You lost. ${computerChoice} beats ${humanChoice}!`);
+        console.log(`You lost. ${computerChoice} beats ${humanChoice}!`)
+        computerScore++;
     }
     
 };
@@ -82,5 +86,7 @@ const computerSelection = getComputerChoice();
 
 playRound(humanSelection, computerSelection);
 
+// console.log(humanScore);
+// console.log(computerScore);
 
 //write entire game logic
