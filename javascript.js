@@ -27,18 +27,18 @@ console.log(getComputerChoice());
 
 //create a function that takes user choice and return it
 
-let uChoice = prompt("Choose: Rock, Paper, or Scissors");
+let uChoice = prompt("Choose: Rock, Paper, or Scissors").toLowerCase();
  //save user choice in variable to be used in conditional statements
 function getHumanChoice() {
     //use switch statements to validate user choice and return input
     switch (uChoice) {
-        case 'Rock':
+        case 'rock':
             return 'Rock';
             break;
-        case 'Paper':
+        case 'paper':
             return 'Paper';
             break;
-        case 'Scissors':
+        case 'scissors':
             return 'Scissors';
             break;
         default:
