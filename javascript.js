@@ -95,25 +95,33 @@ function playGame() {
 
 };
 
-playGame();
-console.log(humanScore);
-console.log(computerScore);
+let game;
+for (game = 1; game <= 5; game++) {
+    playGame();
+    console.log(humanScore);
+    console.log(computerScore);
+};
 
-playGame();
-console.log(humanScore);
-console.log(computerScore);
 
-playGame();
-console.log(humanScore);
-console.log(computerScore);
+// playGame();
+// console.log(humanScore);
+// console.log(computerScore);
 
-playGame();
-console.log(humanScore);
-console.log(computerScore);
+// playGame();
+// console.log(humanScore);
+// console.log(computerScore);
 
-playGame();
-console.log(humanScore);
-console.log(computerScore);
+// playGame();
+// console.log(humanScore);
+// console.log(computerScore);
+
+// playGame();
+// console.log(humanScore);
+// console.log(computerScore);
+
+// playGame();
+// console.log(humanScore);
+// console.log(computerScore);
 
 function winner() {
     if (humanScore == computerScore) {
