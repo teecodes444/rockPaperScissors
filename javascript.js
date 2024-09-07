@@ -94,3 +94,9 @@ function playGame() {
     playRound(humanSelection, computerSelection);
 
 };
+
+playGame();
+playGame();
+playGame();
+playGame();
+playGame();
