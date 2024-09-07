@@ -5,28 +5,6 @@
 let humanScore = 0;
 let computerScore = 0;
 
-//create a function that takes user choice and return it
-
-let humanChoice = prompt("Choose: Rock, Paper, or Scissors").toLowerCase();
- //save user choice in variable to be used in conditional statements
-function getHumanChoice() {
-    //use switch statements to validate user choice and return input
-    switch (humanChoice) {
-        case 'rock':
-            return 'Rock';
-            break;
-        case 'paper':
-            return 'Paper';
-            break;
-        case 'scissors':
-            return 'Scissors';
-            break;
-        default:
-            return 'Not a valid choice.';
-    }
-}
-
-console.log(getHumanChoice());
 
 
 
@@ -96,5 +74,28 @@ function playGame() {
     };
 
     console.log(getComputerChoice());
+
+    //create a function that takes user choice and return it
+
+    let humanChoice = prompt("Choose: Rock, Paper, or Scissors").toLowerCase();
+    //save user choice in variable to be used in conditional statements
+    function getHumanChoice() {
+    //use switch statements to validate user choice and return input
+    switch (humanChoice) {
+        case 'rock':
+            return 'Rock';
+            break;
+        case 'paper':
+            return 'Paper';
+            break;
+        case 'scissors':
+            return 'Scissors';
+            break;
+        default:
+            return 'Not a valid choice.';
+        }
+    }
+
+    console.log(getHumanChoice());
 
 };
