@@ -96,7 +96,21 @@ function playGame() {
 };
 
 playGame();
+console.log(humanScore);
+console.log(computerScore);
+
 playGame();
+console.log(humanScore);
+console.log(computerScore);
+
 playGame();
+console.log(humanScore);
+console.log(computerScore);
+
 playGame();
+console.log(humanScore);
+console.log(computerScore);
+
 playGame();
+console.log(humanScore);
+console.log(computerScore);
