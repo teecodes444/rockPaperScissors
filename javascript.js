@@ -5,26 +5,6 @@
 let humanScore = 0;
 let computerScore = 0;
 
-//create a function that randomly returns the computer choice
-
-const computerChoice = Math.floor(Math.random() * 3) + 1;
-function getComputerChoice() {
-    // returns a random number between 1 and 3
-   switch (computerChoice) {
-    case 1:
-        return 'Rock';
-        break;
-    case 2:
-        return 'Paper';
-        break;
-    case 3:
-        return 'Scissors'
-        break;
-   }
-};
-
-console.log(getComputerChoice());
-
 //create a function that takes user choice and return it
 
 let humanChoice = prompt("Choose: Rock, Paper, or Scissors").toLowerCase();
@@ -97,5 +77,24 @@ playRound(humanSelection, computerSelection);
     //declare winner after 5 games
 
 function playGame() {
+    //create a function that randomly returns the computer choice
+
+    const computerChoice = Math.floor(Math.random() * 3) + 1;
+    function getComputerChoice() {
+        // returns a random number between 1 and 3
+    switch (computerChoice) {
+        case 1:
+            return 'Rock';
+            break;
+        case 2:
+            return 'Paper';
+            break;
+        case 3:
+            return 'Scissors'
+            break;
+        }
+    };
+
+    console.log(getComputerChoice());
 
 };
