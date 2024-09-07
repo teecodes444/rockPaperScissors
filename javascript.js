@@ -1,6 +1,6 @@
 //declare variables to track player score
-    //declared humanScore and computerScore in global scope
-    //initialized both to 0
+    //declare humanScore and computerScore in global scope
+    //initialize both to 0
 
 let humanScore = 0;
 let computerScore = 0;
@@ -37,7 +37,7 @@ function playGame() {
         }
     }
 
-    console.log(getHumanChoice());
+    console.log('You picked: ' + getHumanChoice());
 
     //create a function that randomly returns the computer choice
 
@@ -56,7 +56,7 @@ function playGame() {
             break;
         }
     };
-    console.log(getComputerChoice());
+    console.log('Computer picked: ' + getComputerChoice());
   
     //write single round logic
     // take user choice
