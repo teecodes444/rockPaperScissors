@@ -86,6 +86,7 @@ const computerSelection = getComputerChoice();
 
 playRound(humanSelection, computerSelection);
 
+
 // console.log(humanScore);
 // console.log(computerScore);
 
@@ -94,3 +95,7 @@ playRound(humanSelection, computerSelection);
         //call it 5X
     //keep track of score
     //declare winner after 5 games
+
+function playGame() {
+
+};
