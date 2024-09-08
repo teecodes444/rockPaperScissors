@@ -99,8 +99,8 @@ function playGame() {
 let game;
 for (game = 1; game <= 5; game++) {
     playGame();
-    console.log(humanScore);
-    console.log(computerScore);
+    console.log('Your score: ' + humanScore);
+    console.log('Computer score: ' + computerScore);
 };
 
 
