@@ -69,17 +69,21 @@ function playGame() {
     //scissors beats paper
     //paper beats rock
 
+    let rock = document.querySelector("#rock").addEventListener('click', playRound);
+    let paper = document.querySelector("#paper").addEventListener('click', playRound);
+    let scissors = document.querySelector("#scissors").addEventListener('click', playRound);
+
     function playRound(humanChoice, computerChoice) {
         
         if (humanChoice === computerChoice) {
             console.log('It\'s a tie.');
-        } else if (humanChoice === 'Rock' && computerChoice === 'Scissors') {
+        } else if (humanChoice === rock && computerChoice === scissors) {
             console.log(`You won! ${humanChoice} beats ${computerChoice}!`)
             humanScore++;
-        } else if (humanChoice === 'Scissors' && computerChoice === 'Paper') {
+        } else if (humanChoice === scissors && computerChoice === paper) {
             console.log(`You won! ${humanChoice} beats ${computerChoice}!`)
             humanScore++;
-        } else if (humanChoice === 'Paper' && computerChoice === 'Rock') {
+        } else if (humanChoice === paper && computerChoice === rock) {
             console.log(`You won! ${humanChoice} beats ${computerChoice}!`)
             humanScore++;
         } else {
