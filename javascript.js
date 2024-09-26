@@ -96,12 +96,12 @@ function playGame() {
 
 };
 
-let game;
+/* let game;
 for (game = 1; game <= 5; game++) {
     playGame();
     console.log('Your score: ' + humanScore);
     console.log('Computer score: ' + computerScore);
-};
+}; */
 
 
 // playGame();
