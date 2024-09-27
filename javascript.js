@@ -1,3 +1,5 @@
+// ORIGINAL RPS
+
 //declare variables to track player score
     //declare humanScore and computerScore in global scope
     //initialize both to 0
